@@ -1,4 +1,4 @@
-public with sharing class MyClass {
+public class MyClass {
 	public MyClass() {
 
 	}
