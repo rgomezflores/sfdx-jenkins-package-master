@@ -1,0 +1,22 @@
+name: PMD Salesforce Scan
+
+on: [push, pull_request]  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Java
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+    - name: Install PMD
+      run: |
+        wget https://github.com/pmd/pmd/releases/download/pmd_releases%2F6.54.0/pmd-bin-6.54.0.zip
+        unzip pmd-bin-6.54.0.zip
+    - name: PMD Salesforce Scan
+      run: |
+        ./pmd-bin-6.54.0/bin/run.sh pmd -d ./force-app/main/default/ -R ./pmd-salesforce.xml -f text
+        echo "::set-output name=scan_results::$(cat pmd-report.txt)"
