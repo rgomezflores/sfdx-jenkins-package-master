@@ -11,7 +11,10 @@
     <rule ref="category/apex/bestpractices.xml/ApexUnitTestShouldNotUseSeeAllDataTrue" />
     <rule ref="category/apex/bestpractices.xml/ApexUnitTestClassShouldHaveAsserts" />
     <rule ref="category/apex/performance.xml/OperationWithLimitsInLoop" />
-
+    <rule ref="category/apex/bestpractices.xml/ApexAssertionsShouldIncludeMessage" />
+    <rule ref="category/apex/bestpractices.xml/ApexUnitTestClassShouldHaveAsserts" />
+    <rule ref="category/apex/bestpractices.xml/ApexUnitTestMethodShouldHaveIsTestAnnotation" />
+    <rule ref="category/apex/bestpractices.xml/ApexUnitTestShouldNotUseSeeAllDataTrue" />
 
 	
 </ruleset>
