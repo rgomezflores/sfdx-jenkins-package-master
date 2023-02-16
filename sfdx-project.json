@@ -3,12 +3,15 @@
     {
       "path": "force-app",
       "default": true,
-      "package": "0Ho1U000000CaUzSAK",
+      "package": "MyPackage",
       "versionNumber": "1.0"
     }
   ],
   "name": "sfdx-jenkins-package-master",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "55.0"
+  "sourceApiVersion": "55.0",
+  "packageAliases": {
+    "MyPackage": "00Ho1U000000CaUzSAK"
+  }
 }
