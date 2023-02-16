@@ -3,6 +3,10 @@
     {
       "path": "force-app",
       "default": true
+    },
+    {
+        "path": "0Ho1U000000CaUzSAK",
+        "versionNumber": "1.0"
     }
   ],
   "name": "sfdx-jenkins-package-master",
