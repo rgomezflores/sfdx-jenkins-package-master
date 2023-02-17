@@ -12,6 +12,6 @@
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "55.0",
   "packageAliases": {
-    "MyPackage": "0Ho1U000000CaUzSAK"
+    "MyPackage": "0Ho"
   }
 }
